@@ -10,15 +10,15 @@ The application allows users to add, view, and search student records with persi
 - View all stored students
 - Search a student by roll number
 - Persistent storage using a text file
-- Automatic file creation using exception handling
+- Automatic creation of the data file if it does not exist
 
 ---
 
 ## How It Works
 - Student data is stored in a text file (`students.txt`)
-- Each record is saved in the format: `roll,name,marks`
+- Each record is stored using the format `roll,name,marks`
 - Data is loaded into memory using a list of dictionaries
-- The file is created automatically if it does not exist
+- The program handles missing data files by creating them automatically
 
 ---
 
@@ -29,3 +29,4 @@ The application allows users to add, view, and search student records with persi
 
 ```bash
 python student_manager.py
+
