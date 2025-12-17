@@ -16,7 +16,7 @@ def load_students():
     return students
 
 
-def create_students(students):
+def save_students(students):
     with open("students.txt", "w") as f:
         for s in students:
             f.write(f"{s['roll']},{s['name']},{s['marks']}\n")
@@ -33,7 +33,7 @@ def add_student(students):
         "marks": marks
     })
 
-    create_students(students)
+    save_students(students)
     print("Student added successfully!")
 
 
